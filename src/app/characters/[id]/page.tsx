@@ -82,7 +82,7 @@ export default function DetailCharacterPage({
     <main className="p-4 sm:p-8 min-h-screen bg-gray-50">
       
       {/* Tombol Back Mobile-First */}
-      <Link href="/" className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors mb-6 font-medium">
+      <Link href="/characters" className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors mb-6 font-medium">
         &larr; Kembali ke Daftar
       </Link>
 
@@ -113,13 +113,12 @@ export default function DetailCharacterPage({
           <div className="space-y-3 mb-6 border-t pt-4">
             <DetailItem label="Species" value={character.species} />
             <DetailItem label="Gender" value={character.gender} />
-            {/* <DetailItem label="Origin Location" value={character.origin.name} /> */}
             <DetailItem label="Current API Location" value={character.location.name} />
           </div>
           
           {/* Status Lokasi Tugas Kandidat */}
           <div className="p-3 bg-indigo-100 border-l-4 border-indigo-500 rounded mb-6">
-            <p className="font-semibold text-indigo-700">Lokasi Tugas (Kandidat):</p>
+            <p className="font-semibold text-indigo-700">Lokasi Tugas:</p>
             <p className="text-lg text-indigo-900">
               {currentLocation ? (
                 <span className="font-bold">{currentLocation.name}</span>

@@ -10,7 +10,6 @@ export interface Character {
   // Detail lainnya (untuk halaman Detail)
   episode: { name: string }[];
   location: { name: string };
-  origin: { name: string } ;
 }
 
 // Tipe data yang dikembalikan oleh API untuk list

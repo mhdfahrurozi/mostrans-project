@@ -20,7 +20,7 @@ export default function CharacterByLocationPage() {
       
       {/* Tombol Back Mobile-First */}
       <Link href="/" className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors mb-6 font-medium">
-        &larr; Kembali ke Daftar Karakter
+          &larr; Kembali ke Home
       </Link>
       
       <header className="mb-8">
