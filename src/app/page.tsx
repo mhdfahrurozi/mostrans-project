@@ -9,7 +9,7 @@ import { useState } from 'react';
 export default function CharacterListPage() {
   const { loading, error, data } = useQuery<GetCharactersData>(GET_CHARACTERS);
   
-  // State untuk pencarian (opsional, tapi bagus untuk UI/UX)
+  // State untuk pencarian
   const [searchTerm, setSearchTerm] = useState('');
 
   if (loading) return (
