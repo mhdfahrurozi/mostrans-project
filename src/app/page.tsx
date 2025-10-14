@@ -5,11 +5,12 @@ import { GET_CHARACTERS } from '@/graphql/query';
 import { GetCharactersData } from '@/types/character';
 import CharacterCard from '@/components/CharacterCard';
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function CharacterListPage() {
   const { loading, error, data } = useQuery<GetCharactersData>(GET_CHARACTERS);
   
-  // State untuk pencarian (opsional, tapi bagus untuk UI/UX)
+  // State untuk pencarian
   const [searchTerm, setSearchTerm] = useState('');
 
   if (loading) return (
@@ -48,6 +49,9 @@ export default function CharacterListPage() {
             onChange={(e) => setSearchTerm(e.target.value)}
             className="w-full mt-4 p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 text-base"
           />
+          <Link href="/locations" className="block mt-4 text-center text-blue-600 hover:underline">
+            <button className="w-full sm:w-auto p-3 text-center bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 transition-colors duration-200 mt-4">Lihat Semua Lokasi</button>
+          </Link>
         </div>
       </header>
 
