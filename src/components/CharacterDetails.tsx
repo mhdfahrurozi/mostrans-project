@@ -34,7 +34,6 @@ export default function CharacterDetails({
         Status: <span className={statusColor}>{character.status}</span>
       </p>
     
-      {/* Informasi Tambahan */}
       <div className="space-y-3 mb-6 border-t pt-4">
         <DetailItem label="Species" value={character.species} />
         <DetailItem label="Gender" value={character.gender} />
