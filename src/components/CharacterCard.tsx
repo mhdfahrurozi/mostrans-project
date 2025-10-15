@@ -9,23 +9,20 @@ interface CharacterCardProps {
 }
 
 export default function CharacterCard({ character }: CharacterCardProps) {
-  // Logic untuk menentukan warna status
   const statusColor = character.status === 'Alive' ? 'bg-green-500' : 
                       character.status === 'Dead' ? 'bg-red-500' : 'bg-gray-500';
-
   return (
-    // Menggunakan <Link> untuk navigasi ke halaman detail. Ini adalah fitur SPA dari Next.js.
     <Link href={`/characters/${character.id}`}>
       <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.02] cursor-pointer border border-gray-100">
         
-        {/* Kontainer Gambar. Mobile-first: aspect-square (1:1) agar kompak */}
+        {/* Gambar Karakter */}
         <div className="relative w-full h-48 sm:h-64">
           <Image
             src={character.image}
             alt={character.name}
             fill
             style={{ objectFit: 'cover' }}
-            priority={false} // Atur menjadi false agar tidak semua gambar dimuat sekaligus
+            priority={false} 
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>

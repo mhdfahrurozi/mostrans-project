@@ -8,6 +8,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useLocationContext } from '@/context/Location';
 import { useState } from 'react';
+import ButtonHome from '@/components/ButtonHome';
 // import { LocationData } from '@/types/locations';
 
 // Tipe data untuk hasil query Detail
@@ -81,10 +82,7 @@ export default function DetailCharacterPage({
   return (
     <main className="p-4 sm:p-8 min-h-screen bg-gray-50">
       
-      {/* Tombol Back Mobile-First */}
-      <Link href="/characters" className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors mb-6 font-medium">
-        &larr; Kembali ke Daftar
-      </Link>
+      <ButtonHome />
 
       {/* Kontainer Utama Detail */}
       <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden md:flex">

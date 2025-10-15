@@ -4,7 +4,7 @@ export interface CharacterAssignment {
 }
 
 export interface LocationData {
-  name: string; // Nama Lokasi (Harus Unik)
+  name: string; // Nama Lokasi
   characters: CharacterAssignment[];
 }
 
