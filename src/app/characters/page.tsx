@@ -3,7 +3,6 @@
 import { useQuery } from '@apollo/client/react';
 import { GET_CHARACTERS } from '@/graphql/query';
 import { GetCharactersData } from '@/types/character';
-import CharacterCard from '@/components/CharacterCard';
 import { useState } from 'react';
 import ButtonHome from '@/components/ButtonHome';
 import PageHeader from '@/components/PageHeader';
