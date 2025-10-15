@@ -13,7 +13,7 @@ function CharacterList({ filteredCharacters }: CharacterListProps) {
     <>
         {filteredCharacters.length === 0 && (
             <p className="text-center text-gray-500 text-lg mt-10">
-            Karakter tidak ditemukan.
+            Karakter tidak ditemukan
             </p>
         )}
 

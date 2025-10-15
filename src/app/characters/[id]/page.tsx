@@ -14,7 +14,7 @@ interface GetCharacterDetailData {
   character: Character;
 }
 
-export default function DetailCharacterPage({params,}: {params: Promise<{ id: string }>;}) {
+export default function DetailCharacterPage({params}: {params: Promise<{ id: string }>;}) {
   const { id: characterId } = React.use(params);
   // Ambil semua yang dibutuhkan dari Context
   const { assignCharacterToLocation, locations } = useLocationContext();
