@@ -1,6 +1,6 @@
 import React from 'react'
 import CharacterCard from '@/components/CharacterCard';
-import { Character, GetCharactersData } from '@/types/character';
+import { GetCharactersData } from '@/types/character';
 
 type SimpleCharacter = GetCharactersData['characters']['results'][number];
 
