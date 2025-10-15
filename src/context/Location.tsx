@@ -57,7 +57,7 @@ export function LocationProvider({ children }: { children: React.ReactNode }) {
       newLocations = newLocations.map(location => ({
         ...location,
         characters: location.characters.filter(char => char.id !== characterId)
-      })).filter(location => location.characters.length > 0); // Hapus lokasi yang jadi kosong
+      })).filter(location => location.characters.length > 0); 
 
       // 2. Cari lokasi baru (atau yang sudah ada)
       const locationIndex = newLocations.findIndex(
