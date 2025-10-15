@@ -6,7 +6,7 @@ import { GetCharactersData } from '@/types/character';
 import { useState } from 'react';
 import ButtonHome from '@/components/ButtonHome';
 import PageHeader from '@/components/PageHeader';
-import InputSearch from '@/components/InputSearch';
+import InputSearch from '@/components/InputSearch'; 
 import PageSection from '@/components/PageSection';
 import CharacterList from '@/components/CharacterList';
 

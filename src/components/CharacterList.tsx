@@ -17,7 +17,6 @@ function CharacterList({ filteredCharacters }: CharacterListProps) {
             </p>
         )}
 
-        {/* Grid Responsive Mobile-First */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 sm:gap-6">
             {filteredCharacters.map((character) => (
             <CharacterCard key={character.id} character={character} />

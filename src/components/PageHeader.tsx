@@ -36,7 +36,6 @@ export default function PageHeader({
           </p>
         )}
 
-        {/* Konten Tambahan disisipkan di sini (misalnya: ButtonHome) */}
         {children}
 
       </div>
