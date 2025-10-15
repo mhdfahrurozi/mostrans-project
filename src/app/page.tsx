@@ -33,10 +33,10 @@ export default function LandingPage() {
 
         {/* 3. Button Navigasi */}
         <div className="flex space-x-6 pt-6"> 
-          <Link href="/">
+          <Link href="/characters">
             <button
               className="px-8 py-3 rounded-full font-extrabold text-xl transition-all duration-200 
-                         bg-orange-500 text-black shadow-lg hover:bg-orange-600 active:bg-orange-700"
+                         bg-orange-500 text-white shadow-lg hover:bg-orange-600 active:bg-orange-700"
             >
               Character
             </button>
@@ -45,7 +45,7 @@ export default function LandingPage() {
           <Link href="/locations">
             <button
               className="px-8 py-3 rounded-full font-extrabold text-xl transition-all duration-200 
-                         bg-blue-300 text-black shadow-lg hover:bg-blue-400 active:bg-blue-500"
+                         bg-blue-400 text-white shadow-lg hover:bg-blue-500 active:bg-blue-600"
             >
               Locations
             </button>
